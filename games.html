@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="games">
+    <meta name="description" content="valve">
+    <title>VALVe</title>
+    <link rel="stylesheet" href="externo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<style>
+    .game-category {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px; 
+        margin: 50px;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.068);
+    }
+    .game {
+        border: 7px solid #ff6e34;
+        border-radius: 8px;
+        width: 250px; 
+    } 
+    .text h1 {
+        text-align: center; 
+        margin-bottom: 20px;
+        font-size: 2rem;
+    } 
+    .text h2 {
+        font-size: 1.25rem;
+        margin-right: 30px;
+        line-height: 1.6;
+        font-weight: normal;
+        text-align: justify; 
+    }
+    #GamesBackground {
+        z-index: -1;
+        object-fit: cover;
+        opacity: 15%;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        height: 100vh;
+        
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="valvelogo.png" width="12%">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="steam.html">Steam</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="game-category">
+        <img src="halflife.jpg" class="game" id="HalfLife">
+        <div class="text">
+            <h1>Half-Life</h1>
+            <h2>Dr. Gordon Freeman, a theoretical physicist, must fight his way through the contaminated Black Mesa Research Facility after a catastrophic experiment opens a portal to an alien world. This groundbreaking sci-fi shooter revolutionized the FPS genre with its immersive storytelling, intelligent AI, and physics-based gameplay. Experience the game that defined a generation and spawned one of gaming's most beloved franchises.</h2>
+        </div>
+    </div>
+
+    <div class="game-category" id="TeamFortressCategory">
+        <img src="teamfortress.jpg" class="game" id="TeamFortress">
+        <div class="text">
+            <h1>Team Fortress</h1>
+            <h2>Join one of nine distinct classes in this iconic class-based multiplayer shooter. From the stealthy Spy to the massive Heavy, each character brings unique weapons, personalities, and playstyles to the battlefield. With its distinctive cartoon art style, hilarious dialogue, and deep team strategies, Team Fortress 2 has remained one of the most beloved online shooters for nearly two decades. Grab your favorite hat and jump into the action!</h2>
+        </div>
+    </div>
+
+    <div class="game-category" id="CSGOCategory">
+        <img src="csgo.jpg" class="game" id="CSGO">
+        <div class="text">
+            <h1>CSGO</h1>
+            <h2>The world's premier tactical first-person shooter enters a new era. Counter-Strike 2 delivers the classic 5v5 gameplay you love—terrorists vs. counter-terrorists—with stunning Source 2 graphics, reactive smoke grenades, and sub-tick updates for unparalleled precision. Plant the bomb, rescue hostages, or eliminate the enemy team in this free-to-play competitive masterpiece that demands skill, strategy, and teamwork.</h2>
+        </div>
+    </div>
+
+    <div class="game-category" id="PortalCategory">
+        <img src="portal.jpg" class="game" id="Portal">
+        <div class="text">
+            <h1>Portal</h1>
+            <h2>Test your mind in Aperture Science's mysterious facility. Armed with the revolutionary Aperture Science Handheld Portal Device, you'll solve increasingly complex puzzles by creating spatial portals—walk through walls, launch across gaps, and manipulate objects in ways never before possible. Guided by the passive-aggressive AI GLaDOS, this award-winning puzzle game combines brilliant design, dark humor, and unforgettable moments. The cake is not a lie!</h2>
+        </div>
+    </div>
+    <footer>
+        <h>© 2026 VALVe Corporation. All rights reserved. All trademarks are property of their respective
+        owners in the U.S.A and other countries. VAT included in all prices where applicable.</h>
+    </footer>
+    <video autoplay loop id="GamesBackground" >
+        <source src="gamesbackground.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

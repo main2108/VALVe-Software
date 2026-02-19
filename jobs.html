@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="games">
+    <meta name="description" content="valve">
+    <title>VALVe</title>
+    <link rel="stylesheet" href="externo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<style>
+    #roles {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .role-dropdown {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .role-dropdown summary {
+        padding: 15px 0;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+
+    .role-dropdown summary:hover {
+        color: #f74843;
+    }
+
+    .arrow {
+        font-size: 14px;
+        transition: transform 0.3s ease;
+    }
+
+    .role-dropdown[open] .arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-content {
+        padding: 0 15px 20px 15px;
+    }
+
+    .role-description {
+        color: #fff;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .jobs-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    .jobs-table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        vertical-align: top;
+        width: 25%;
+        color: #fff;
+    }
+
+    .jobs-table .senior-position {
+        background-color: #f5f5f5;
+        font-weight: bold;
+        color: #f74843;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #redirect {
+        display: block;
+        text-transform: uppercase;
+        width: 500px;
+        padding: 15px 50px;
+        border-radius: 7px;
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        background: #f74843;
+        cursor: pointer;
+    }
+
+    #JobsBackground {
+        z-index: -1;
+        object-fit: cover;
+        opacity: 15%;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        height: 100vh;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="valvelogo.png" width="12%">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="steam.html">Steam</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us:</h2>
+            <p>We aren't a typical company, which is why you're here, right? As a flat company without hierarchy and job titles, we don't usually hire for specific roles. (Though we sometimes do!) Opportunities at VALVe run broad and deep. We're always hiring highly experienced collaborators who are the best at what they do, across the following areas:</p>
+        </section>
+        <section id="roles">
+            <h2>Roles</h2>
+            <details class="role-dropdown">
+                <summary>
+                    Art
+                    <span class="arrow">▼</span>
+                </summary>
+                <div class="dropdown-content">
+                    <p class="role-description">We're always looking for creative artists who can bring worlds to life.</p>
+                    <table class="jobs-table">
+                        <tr>
+                            <td>3D Character & Environment Artist</td>
+                            <td>Animator</td>
+                            <td>Effects Artist</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="senior-position">Senior 3D Artist – Multiple Positions</td>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+            <details class="role-dropdown">
+                <summary>
+                    Audio
+                    <span class="arrow">▼</span>
+                </summary>
+                <div class="dropdown-content">
+                    <p class="role-description">We're always looking for talented audio professionals to join our team.</p>
+                    <table class="jobs-table">
+                        <tr>
+                            <td>Sound Designer</td>
+                            <td>Audio Software Engineer</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="senior-position">Senior Audio Lead – Multiple Positions</td>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+            <details class="role-dropdown">
+                <summary>
+                    Game Design
+                    <span class="arrow">▼</span>
+                </summary>
+                <div class="dropdown-content">
+                    <p class="role-description">We're always looking for creative game designers who can bring innovative ideas to life.</p>
+                    <table class="jobs-table">
+                        <tr>
+                            <td>Level Designer</td>
+                            <td>System Designer</td>
+                            <td>Story Writer</td>
+                            <td>Combat Designer</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="senior-position">Senior Game Designer – Multiple Positions</td>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+            <details class="role-dropdown">
+                <summary>
+                    Finance
+                    <span class="arrow">▼</span>
+                </summary>
+                <div class="dropdown-content">
+                    <p class="role-description">Join our finance team to help manage and grow our business operations.</p>
+                    <table class="jobs-table">
+                        <tr>
+                            <td>Financial Analyst</td>
+                            <td>Accountant</td>
+                            <td>Tax Specialist</td>
+                            <td>Payroll Manager</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="senior-position">Senior Financial Controller – Multiple Positions</td>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+            <details class="role-dropdown">
+                <summary>
+                    Legal Support
+                    <span class="arrow">▼</span>
+                </summary>
+                <div class="dropdown-content">
+                    <p class="role-description">We're looking for legal professionals to help navigate the complex world of gaming and technology.</p>
+                    <table class="jobs-table">
+                        <tr>
+                            <td>Corporate Lawyer</td>
+                            <td>IP Specialist</td>
+                            <td>Contracts Manager</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="senior-position">Senior Legal Counsel – Multiple Positions</td>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+            <details class="role-dropdown">
+                <summary>
+                    Customer Support
+                    <span class="arrow">▼</span>
+                </summary>
+                <div class="dropdown-content">
+                    <p class="role-description">Join our customer support team to help players around the world.</p>
+                    <table class="jobs-table">
+                        <tr>
+                            <td>Support Specialist</td>
+                            <td>Technical Support</td>
+                            <td>Community Manager</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="senior-position">Senior Support Lead – Multiple Positions</td>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+        </section>
+        <div class="button-container">
+            <a href="support.html" style="text-decoration: none;">
+                <button id="redirect">Apply For A Job</button>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <h>© 2026 VALVe Corporation. All rights reserved. All trademarks are property of their respective
+        owners in the U.S.A and other countries. VAT included in all prices where applicable.</h>
+    </footer>
+    <img src="jobsbackground.gif" id="JobsBackground">
+</body>
+</html>

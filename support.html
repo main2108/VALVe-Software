@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="games">
+    <meta name="description" content="valve">
+    <title>VALVe</title>
+    <link rel="stylesheet" href="externo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<style>
+    .faq-item {
+        font-size: 12px;
+    }
+    #contact {
+        margin-top: 20px;
+        color: #fff;
+    }
+    .contact-form {
+        margin-top: 20px;
+    }
+    .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .contact-form button {
+        background-color: #f74843;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+        display: block;
+        margin-left: auto;
+    }
+    .contact-form button:hover {
+        opacity: 0.9;
+    }
+    #JobsBackground {
+        z-index: -1;
+        object-fit: cover;
+        opacity: 15%;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        height: 100vh;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="valvelogo.png" width="12%">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="steam.html">Steam</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="faq-section">
+            <h2>F.A.Q.:</h2>
+            <div class="faq-item">
+                <h3>Is VALVe working on new games?</h3>
+                <p>Our company has confirmed we are working on new games. In recent years, we have released Half-Life: Alyx (2020), a critically acclaimed VR game and Counter-Strike 2 (2023). VALVe continues to develop and support games like CS2 with regular updates and tournaments.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Where is VALVe located?</h3>
+                <p>VALVe's headquarters is located in Bellevue, Washington, United States. The company also has offices in other locations including Luxembourg, Singapore, and Germany to support its global operations, particularly for Steam.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is it like to work at VALVe</h3>
+                <p>Here employees choose which projects to work on and are encouraged to move between teams based on their interests and skills. This structure is better explained in our employee handbook.</p>
+            </div>
+    </section>
+    <section id="support">
+        <h2>Support Form</h2>
+        <div id="contact">
+            <form class="contact-form" action="#" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe, Jane Doe" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <label for="message">Reasoning</label>
+                <textarea id="message" name="message" rows="7" placeholder="Job Application, Complaint, Bug Report, etc..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <h>© 2026 VALVe Corporation. All rights reserved. All trademarks are property of their respective
+        owners in the U.S.A and other countries. VAT included in all prices where applicable.</h>
+    </footer>
+    <img src="jobsbackground.gif" id="JobsBackground">
+</body>
+</html>
